@@ -1,6 +1,7 @@
 I am making a portfolio about what I have done so far including my studies and work experience :
 
 1. I have done Graduation in BCA (Bachelor of Computer Applications) from PGGC Sector 46 Chandigarh.
+
 1. I have done Masters in Computer Applications from Punjabi University Patiala.
 
 1. I have done Graduate Certificate in Information System Security Computers and Networks and another Graduate Certificate in Project Management.
