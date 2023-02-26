@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <title>Naming Convention | BEM</title>
+  </head>
+  <body>
+    <nav class="navigation container">
+      <div class="nav-branding">I AM DEVELOPER</div>
+      <ul class="list-no-bullet nav-pills">
+        <li class="list-item-inline">
+          <a class="link" href="/index.html">Home</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/projects.html">Projects</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link link-active" href="/blogs.html">Blogs</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="hero">
+      <h1 class="hero-heading">
+        BEM
+        <span class="heading-invert">naming convention</span>
+      </h1>
+    </header>
+    <section class="sectionBlock owSection">
+      <div class="container">
+        <h3>Example:</h3>
+        <p>
+          BEM (Block Element Modifier) is a naming convention used by Designers,
+          Developer. We will understand what is Block, Element and Modifier
+          here. Here is an example and description about how BEM naming
+          convention is written
+        </p>
+      </div>
+      <div class="card">
+        <span class="card__img"></span>
+        <div class="card__content">
+          <div class="card__title card__title--active">My title</div>
+          <p class="card__description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea ipsum
+            cum, ab ducimus veniam eaque vel molestiae sapiente laudantium
+            maiores amet atque rerum modi inventore expedita omnis provident
+            corporis eligendi quidem quasi aut soluta ipsa totam? Id officiis
+            quaerat praesentium quod sed nihil dolores corporis? Tempore
+            possimus pariatur repellat sint?
+          </p>
+          <a
+            class="card__button"
+            href="https://www.youtube.com/watch?v=er1JEDuPbZQ&ab_channel=DesignCourse"
+            target="_blank"
+            >Click here for video tutorial on Youtube
+          </a>
+        </div>
+      </div>
+      <div class="container codeinfo container-center">
+        <div class="codeinfo__para">
+          <strong>HTML CODE:</strong>
+        </div>
+
+        <code class="codeinfo_codeblock">
+          &ltdiv class="card"&gt &ltspan class="card__img"&gt&lt/span&gt &ltdiv
+          class="card__content"&gt &ltdiv class="card__title
+          card__title--active"&gtMy title&lt/div&gt &ltp
+          class="card__description"&gt Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Ea ipsum cum, ab ducimus veniam eaque vel molestiae
+          sapiente laudantium maiores amet atque rerum modi inventore expedita
+          omnis provident corporis eligendi quidem quasi aut soluta ipsa totam?
+          Id officiis quaerat praesentium quod sed nihil dolores corporis?
+          Tempore possimus pariatur repellat sint? &lt/p&gt &lta
+          class="card__button"
+          href="https://www.youtube.com/watch?v=er1JEDuPbZQ&ab_channel=DesignCourse"
+          target="_blank" &gtClick here for video tutorial on Youtube &lt/a&gt
+          &lt/div&gt &lt/div&gt
+        </code>
+      </div>
+
+      <div class="container container-center">
+        <div><strong>CSS Code: </strong></div>
+
+        <code class="codeBlock">
+          .card { width: 300px; margin: auto; } .card__img { background:
+          var(--primary-color); display: block; height: 100px; width: 100%; }
+          .card__content { background: white; padding: 1.5em; } .card
+          .card__title { border-radius: 0.3rem; color: var(--dark-gray-color); }
+          .card__title--active { font-weight: bolder; } .card__button {
+          text-decoration: none; color: var(--primary-color); padding: 0.5em
+          1rem; border-radius: 0.5rem; display: inline-block; border: 1px solid
+          var(--primary-color); }
+        </code>
+      </div>
+      <div class="container ListDetail">
+        <h3 class="ListDetail__Heading">Detail Explanation:</h3>
+        <ul class="ListDetail__ulist">
+          <li class="ListDetail__listItem">
+            First, You need to copy the above HTML code and save it in .html
+            file extension. <strong> Example "card.html"</strong> .
+          </li>
+          <li class="ListDetail__listItem">
+            Then you need to copy the above CSS Code and save it in .css file
+            extension. <strong>Example : "style.css"</strong>.
+          </li>
+          <li class="ListDetail__listItem">
+            Then you need to add the following code in the html file inside the
+            head element.
+          </li>
+          <li class="ListDetail__listItem">
+            <code> &ltlink rel="stylesheet" href="/style.css" &gt</code>
+          </li>
+          <li class="ListDetail__listItem">
+            Note: Make sure that both files
+            <strong>card.html and style.css</strong> are under same folder or
+            same path.
+          </li>
+
+          <li class="ListDetail__listItem">
+            we write block just by name .
+            <strong> Example "class=card" is considered as block </strong> .
+          </li>
+
+          <li class="ListDetail__listItem">
+            We write element by blockname__elementName.
+            <strong>
+              Example : class= "card__button" class="card__content"
+              class="card__img" class="card__description"
+              class="card__title"</strong
+            >.
+          </li>
+          <li>
+            We write modifier either by blockname--modifiername or by
+            elementname--modifiername
+            <strong> Example : class= "card__title--active"</strong>.
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

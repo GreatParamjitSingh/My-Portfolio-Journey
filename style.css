@@ -19,7 +19,7 @@ hr {
 }
 /* container */
 .container {
-  padding: 0rem 1rem;
+  padding: 1rem 1rem;
   /* both above and below code will do the same operation  */
 
   /* padding-left: 1rem;
@@ -150,4 +150,52 @@ hr {
 
 .article-style .article-para-style {
   text-align: justify;
+}
+
+.article-style .link-secondary:hover {
+  background-color: var(--primary-color);
+  color: var(--offwhite-color);
+}
+
+.card {
+  width: 300px;
+  margin: auto;
+}
+
+.card__img {
+  background: var(--primary-color);
+  display: block;
+  height: 100px;
+  width: 100%;
+}
+
+.card__content {
+  background: white;
+  padding: 1.5em;
+}
+
+.card .card__title {
+  border-radius: 0.3rem;
+  color: var(--dark-gray-color);
+}
+
+.card__title--active {
+  font-weight: bolder;
+}
+
+.card__button {
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 0.5em 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  border: 1px solid var(--primary-color);
+}
+
+.ListDetail .ListDetail__Heading {
+  text-align: left;
+}
+
+.ListDetail__listItem {
+  padding: 1rem 0rem;
 }
